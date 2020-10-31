@@ -4,7 +4,7 @@
 		<% out.println("welcome"+" "+session.getAttribute("uname")); %>
 	
 	</title>
-	<% response.setHeader("Pragma","no-store,no-cache,must-revalidate"); %>
+	<% response.setHeader("Pragma","no-store,no-cache,must-revalidate"); %>  //HTTP 1.1
 	<link rel="icon" type="image/png" href="css/images/icon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,10 +13,15 @@
 	.header
 	{
 		width: auto;
-		height: 185px;
+		height: 30%px;
 		background-color: rgba(255,255,255,0);
 		
 	}
+	html,body
+		{
+			height: 100%;
+			width: auto;
+		}
 	.body
 	{
 		width: 100%;
