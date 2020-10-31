@@ -39,7 +39,7 @@
         <input id="in" type="submit" value="Login again" align="centre"> 
                             <%
 response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
-response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+response.setHeader("Pragma", "no-cache,must-revalidate"); // HTTP 1.1
 if(session.getAttribute("valid")==null)
 {
     out.println("<script>parent.location.href='index.jsp'</script>");
